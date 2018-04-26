@@ -44,7 +44,7 @@ const FiosForm = () => {
                         </select>
                     </td>
                     <td>
-                        <input id="projectCode" type="text" size="6"/>
+                        <input id="projectCode" type="text" minLength="6" maxLength="6" size="6" required/>
                     </td>
                     <td>
                         <select name="group">
@@ -55,7 +55,7 @@ const FiosForm = () => {
                         </select>
                     </td>
                     <td>
-                        <input id="inMarketDate" type="date" />
+                        <input id="inMarketDate" type="date" required/>
                     </td>
                     <td>
                         <select name="platform">
@@ -66,13 +66,13 @@ const FiosForm = () => {
                         </select>
                     </td>
                     <td>
-                        <input id="description" type="text" maxlength="10" size="10"/>
+                        <input id="description" type="text" maxlength="10" size="10" required/>
                     </td>
                     <td>
-                        <input id="misc" type="text" maxlength="10" size="10"/>
+                        <input id="misc" type="text" maxlength="10" size="10" required/>
                     </td>
                     <td>
-                        <input id="url" type="text" size="10" pattern="https://.+" title="Must be a secure URL - use https://"/>
+                        <input id="url" type="text" size="10" pattern="https://.+" title="Must be a secure URL - use https://" required/>
                     </td>
                 </tr>
                 </tbody>
